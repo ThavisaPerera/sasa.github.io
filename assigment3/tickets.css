@@ -1,0 +1,459 @@
+* {
+   font-family: 'Poppins', sans-serif;
+   border-radius: 3px;
+   padding: 6px;
+   justify-content: space-around;
+   margin: auto;
+   box-sizing: border-box;
+}
+
+body {
+   min-width: 200px;
+   max-width: 2000px;
+   width: 100%;
+   margin: 1px;
+   font-size: large;
+}
+
+h1 {
+   text-align: center;
+   color: #ffffff;
+   text-transform: uppercase;
+   font-weight: bolder;
+   padding: 8px;
+   letter-spacing: 2px;
+   background: linear-gradient(45deg, rgb(60, 162, 58), rgb(253, 228, 130));
+
+}
+
+label {
+   margin-right: 3em;
+   width: 15em;
+   display: inline-block;
+}
+
+#output {
+   height: 6em;
+   border: rgb(246, 246, 246) solid 1px;
+   width: 1000px;
+   font-size: 20px;
+   color: rgb(0, 0, 0);
+   padding: 15px;
+   text-align: center;
+   font-weight: bolder;
+   background: linear-gradient(45deg, rgb(90, 209, 88), rgb(255, 237, 167));
+   border-radius: 10px;
+   box-shadow: 10px 10px 5px lightblue;
+}
+
+legend {
+   background: linear-gradient(45deg, rgb(60, 162, 58), rgb(253, 228, 130));
+   color: #ffffff;
+   padding: 5px;
+}
+
+fieldset {
+   width: 1000px;
+   margin-bottom: 20px;
+   background: linear-gradient(45deg, rgb(225, 223, 223), rgb(255, 253, 253));
+   border-radius: 10px;
+   box-shadow: 10px 10px 5px lightblue;
+}
+
+.info {
+   display: flex;
+}
+
+.fn {
+   display: flex;
+   flex-direction:
+      column;
+}
+
+.fn input {
+   border: 2px solid white;
+   border-radius: 4px;
+   display: block;
+   font-size: 18px;
+   width: 100%;
+}
+
+.fn input:focus {
+   outline: 0;
+}
+
+.fn.success input {
+   border-color: #09c372;
+}
+
+.fn.error input {
+   border-color: #ff3860;
+}
+
+.fn .error {
+   color: #ff3860;
+   font-size: 12px;
+   height: 13px;
+}
+
+.mn {
+   display: flex;
+   flex-direction:
+      column;
+}
+
+.mn input {
+   border: 2px solid white;
+   border-radius: 4px;
+   display: block;
+   font-size: 18px;
+   width: 100%;
+}
+
+.mn input:focus {
+   outline: 0;
+}
+
+.mn.success input {
+   border-color: #09c372;
+}
+
+.mn.error input {
+   border-color: #ff3860;
+}
+
+.mn .error {
+   color: #ff3860;
+   font-size: 12px;
+   height: 13px;
+}
+
+
+
+.gen {
+   text-align: center;
+   margin-top: 15px;
+}
+
+/*increment*/
+.local {
+   display: flex;
+}
+
+.foreign {
+   display: flex;
+}
+
+.ye {
+   display: flex;
+}
+
+.ye .button {
+   width: 37px;
+   height: 37px;
+   border: 1px solid white;
+   border-radius: 45px;
+   display: flex;
+   align-items: center;
+   font-size: 22px;
+   color: white;
+   cursor: pointer;
+   background: linear-gradient(45deg, blueviolet, deeppink);
+}
+
+.ye .button:active {
+   background: linear-gradient(45deg, rgb(3, 3, 159), rgb(20, 153, 255));
+}
+
+.ye input {
+   width: 60px;
+   padding: 5px 10px;
+   border: 1px solid #c6c6c6;
+   border-radius: 5px;
+   font-size: 20px;
+   margin: 0 10px;
+   text-align: center;
+}
+
+.time {
+   text-align: center;
+}
+
+/*place oder button*/
+
+.placeButton {
+   text-align: center;
+}
+
+.placeButton button {
+   width: 50em;
+   background: linear-gradient(45deg, blueviolet, deeppink);
+   padding: 1em;
+   color: white;
+   display: block;
+   border-radius: 10px;
+   border: 1px solid black;
+   font-size: 18px;
+}
+
+
+.placeButton button:hover {
+   cursor: pointer;
+   background: linear-gradient(45deg, rgb(3, 3, 159), rgb(20, 153, 255));
+   transform: scale(1.02, 1.02);
+}
+
+/*add oder button*/
+
+.add {
+   text-align: center;
+}
+
+.add button {
+   width: 20em;
+   background: linear-gradient(45deg, blueviolet, deeppink);
+   padding: 1em;
+   color: white;
+   display: block;
+   border-radius: 10px;
+   border: 1px solid black;
+   font-size: 15px;
+}
+
+
+.add button:hover {
+   cursor: pointer;
+   background: linear-gradient(45deg, rgb(3, 3, 159), rgb(20, 153, 255));
+   transform: scale(1.02, 1.02);
+}
+
+.twoBtn {
+   display: flex;
+}
+
+
+.twoButton {
+   text-align: center;
+}
+
+.twoButton button {
+   width: 15em;
+   background: linear-gradient(45deg, rgba(137, 43, 226, 0.714), rgba(255, 20, 145, 0.61));
+   padding: 1em;
+   color: white;
+   display: block;
+   border-radius: 10px;
+   border: 1px solid black;
+   font-size: 13px;
+}
+
+
+.twoButton button:hover {
+   cursor: pointer;
+   background: linear-gradient(45deg, rgba(3, 3, 159, 0.752), rgba(20, 153, 255, 0.725));
+   transform: scale(1.02, 1.02);
+}
+
+/*calender*/
+.calender {
+   text-align: center;
+}
+
+.calender input[type="date"] {
+   background: linear-gradient(45deg, blueviolet, deeppink);
+   padding: 15px;
+   font-family: "Roboto Mono", monospace;
+   color: #ffffff;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+}
+
+.calender input[type="date"]:hover {
+   opacity: 0.8;
+   cursor: pointer;
+}
+
+.calender:hover {
+   transform: scale(1.07, 1.07);
+}
+
+::-webkit-calendar-picker-indicator {
+   cursor: pointer;
+   background-color: white;
+   padding: 5px;
+   border-radius: 3px;
+}
+
+.show {
+   text-align: center;
+   background: linear-gradient(45deg, rgb(60, 162, 58), rgb(253, 228, 130));
+   color: white;
+   font-size: 20px;
+}
+
+/*table*/
+.row {
+   margin: 10px;
+}
+
+.column {
+   float: left;
+   width: 50%;
+   padding: 5px;
+}
+
+table {
+   margin-bottom: 40px;
+   text-align: center;
+}
+
+th {
+   background: linear-gradient(45deg, rgb(60, 162, 58), rgb(253, 228, 130));
+   color: white;
+}
+
+/*current cost*/
+
+.current {
+   background: linear-gradient(45deg, rgb(167, 240, 165), rgb(255, 255, 255));
+   padding: 5px;
+   display: flex;
+}
+
+
+#cost {
+   text-align: justify;
+   font-size: 22px;
+   font-weight: bolder;
+   color: #000000;
+}
+
+.c {
+   background: linear-gradient(45deg, rgb(167, 240, 165), rgb(255, 255, 255));
+   padding: 5px;
+   display: flex;
+   margin-bottom: 10px;
+}
+
+
+#cart {
+   text-align: justify;
+   font-size: 15px;
+   font-weight: bolder;
+   color: #000000;
+}
+
+@media screen and (max-width: 1050px) {
+   fieldset {
+      width: 900px;
+   }
+
+   #output {
+      width: 900px;
+   }
+
+   .local {
+      display: flex;
+      flex-direction:
+         column;
+   }
+
+   .foreign {
+      display: flex;
+      flex-direction:
+         column;
+   }
+}
+
+@media screen and (max-width: 942px) {
+   fieldset {
+      width: 700px;
+   }
+
+   #output {
+      width: 700px;
+   }
+
+   .info {
+      display: flex;
+      flex-direction:
+         column;
+   }
+
+   .placeButton button {
+      width: 500px;
+   }
+}
+
+@media screen and (max-width: 742px) {
+   fieldset {
+      width: 500px;
+   }
+
+   #output {
+      width: 500px;
+   }
+
+   .row {
+      display: block;
+   }
+   
+   .column {
+      block-size: 100%;
+   }
+   
+   .column {
+      float: none;
+      margin-top: 10px;
+      width: 100%;
+   }
+
+   .placeButton button {
+      width: 400px;
+   }
+}
+
+
+@media screen and (max-width: 545px) {
+   fieldset {
+      width: 300px;
+   }
+
+   #output {
+      width: 300px;
+   }
+
+   .placeButton button {
+      width: 200px;
+   }
+   
+   label {
+      margin-right: 8px;
+      display: block;
+   }
+
+   .ye {
+      display: block;
+   }
+
+   .ye {
+      flex-direction: row;
+   }
+}
+
+@media screen and (max-width: 496px) {
+   fieldset {
+      width: 200px;
+   }
+
+   #output {
+      width: 200px;
+   }
+
+   .placeButton button {
+      width: 150px;
+   }
+   
+}

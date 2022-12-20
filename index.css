@@ -1,0 +1,727 @@
+/*ALL*/
+/*body*/
+
+* {
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+h1 {
+   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 2em;
+   text-align: center;
+   color: rgb(97, 153, 0);
+   font-weight: bolder;
+}
+
+h2 {
+   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 1.8em;
+   text-align: center;
+   color: rgb(97, 153, 0);
+   font-weight: bolder;
+}
+
+h3 {
+   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 1.4em;
+   text-align: center;
+   color: rgb(97, 153, 0);
+   font-weight: bolder;
+}
+
+img {
+   border: 2px;
+   border-style: solid;
+   border-color: black;
+   margin: 8px;
+   border-radius: 5px;
+}
+
+#container {
+   min-width: 200px;
+   max-width: 2000px;
+   width: 100%;
+   margin: 1px;
+   background: whitesmoke;
+}
+
+main {
+   padding: 1em;
+   margin: 0;
+}
+
+/*header,footer*/
+
+header, footer {
+   padding: 1em;
+   background-color: rgb(47, 148, 47);
+}
+
+/*header*/
+
+header a {
+   color: rgb(0, 0, 0);
+}
+
+header img {
+   height: 80px;
+   width: 80px;
+}
+
+/*navbar*/
+.mainNav {
+   position: relative;
+   top: 0;
+   color: black;
+}
+
+.mainNav ul {
+   color: rgb(0, 0, 0);
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   background-color: rgb(47, 148, 47);
+   flex-flow: row wrap;
+   text-align: center;
+   border: 1px ;
+   font-size: medium;
+}
+
+.mainNav ul li {
+   color: rgb(0, 0, 0);
+   flex-grow: 1;
+   width: 1em;
+   border: 1em;
+   font-size: medium;
+}
+
+.navText {
+   padding-right: 60px;
+}
+
+.mainNav a {
+   color: rgb(0, 0, 0);
+   background-repeat: no-repeat;
+   background-size: 40px 60px;
+   background-position: .5em center;
+   min-height: 50px;
+   line-height: 5opx;
+   text-decoration: none;
+   display: block;
+}
+
+.mainNav a:hover {
+   color: rgb(255, 255, 255);
+}
+
+/*dropdown navbar*/
+
+ul li ul.dropdown li {
+   display: block;
+}
+
+ul li ul.dropdown {
+   width: 16%;
+   background: rgb(47, 148, 47);
+   position: absolute;
+   z-index: 999;
+   display: none;
+}
+
+ul li a:hover {
+   background: rgb(47, 148, 47);
+}
+ul li:hover ul.dropdown {
+   display: block;
+}
+
+.dropdown {
+   text-align: center;
+}
+
+/*footer*/
+
+footer .social {
+   text-align: center;
+   padding-bottom: 32px;
+}
+
+footer img {
+   width: 40px;
+}
+
+footer .social a {
+   font-size: 30px;
+   width: 40px;
+   height: 40px;
+   line-height: 38px;
+   display: inline-block;
+   border-radius: 20px;
+   margin: 0 8px;
+   opacity: 0.8;
+}
+
+footer .social a:hover {
+   opacity: 1;
+}
+
+footer ul {
+   margin-top: 20px;
+   padding: 0;
+   list-style: none;
+   font-size: 15px;
+   line-height: 1.6;
+   margin-bottom: 0;
+   text-align: center;
+}
+
+footer ul li a {
+   color: inherit;
+   text-decoration: none;
+}
+
+footer ul li {
+   color: rgb(0, 0, 0);
+   background-color: rgb(47, 148, 47);
+   display: inline-block;
+   padding: 0 25px;
+   margin: 7px;
+   border: 0.5px  rgb(0, 0, 0);
+   border-radius: 3px;
+   text-align: center;
+}
+
+footer ul li a:hover {
+   color: rgb(255, 255, 255);
+}
+
+footer .copyright {
+   margin-top: 15px;
+   text-align: center;
+   font-size: 15px;
+   color: silver;
+}
+
+/*main section*/
+
+#tea {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#tea .start {
+  margin: .8em .2em;
+  width: 99%;
+  box-sizing: border-box;
+  box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+  background-color: rgb(244, 252, 183);
+  border-radius: 10px;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+}
+
+#tea .container {
+  margin: .8em .2em;
+  width: 99%;
+  box-sizing: border-box;
+  box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+#tea h1 #tea h2, #tea h3, #tea h4, #tea p, #tea li {
+  width: 90%;
+  padding: 5px;
+  margin: 1em auto
+}
+
+/*home*/
+
+#MainImg img {
+   width: 100%;
+   margin: 0;
+}
+
+#slmap img {
+   float: left;
+   margin: 10px;
+}
+
+#slmap p {
+   padding-top: 4%;
+}
+
+/*ceylon tea museum*/
+
+.row img{
+   width: 100%;
+}
+
+.row {
+   display: flex;
+   margin: 10px;
+}
+
+.column {
+   flex: 33.33%;
+   padding: 5px;
+}
+
+.row {
+   margin: 10px;
+}
+.column {
+   float: left;
+   width: 50%;
+   padding: 5px;
+}
+
+.ticket .button {
+   padding: 1em;
+   background-color: rgb(114, 239, 105);
+   color: black;
+   text-transform: none;
+   text-align: center;
+   display: block;
+   width: 100%;
+   align-content: center;
+   border-radius: 10px;
+   border: 1px solid black;
+    
+}
+
+.ticket .button:hover {
+  opacity: 0.5;
+}
+
+
+/*tea plantation*/
+
+#tea .history {
+   margin: .8em .2em;
+   width: 99%;
+   box-sizing: border-box;
+   box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+   background-color: whitesmoke;
+   border-radius: 10px;
+}
+
+#james img {
+   float: left;
+   margin: 10px;
+}
+
+#james p {
+   padding-top: 3%;
+}
+
+
+#region {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+}
+
+#region .area {
+  margin: .8em .2em;
+  width: 80%;
+  box-sizing: border-box;
+  box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+  background-color: whitesmoke;
+  border: 2px outset black;
+  border-radius: 10px;
+  margin: 20px;
+  margin-bottom: 35px;
+}
+
+#region h4, #region p {
+  width: 90%;
+  padding: 0;
+  margin: 1em auto;
+  color: rgb(47, 42, 42);
+}
+
+#region .area:hover {
+  transform: scale(1.01, 1.01);
+}
+
+#tab {
+   margin: 5px;
+   border: solid;
+   border-radius: 10px;
+   text-align: center;
+}
+
+#tab img {
+   width: 100px;
+}
+
+#lionlogo img{
+   float: left;
+   margin: 10px;
+   width: 200px;
+}
+
+/*by products*/
+
+#tea .Byproducts {
+   margin: .8em .2em;
+   width: 99%;
+   box-sizing: border-box;
+   box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+   background-color: whitesmoke;
+   border-radius: 10px;
+}
+
+.Byproducts img {
+   width: 300px;
+   float: left;
+}
+
+.Byproducts ul {
+   width: 90%;
+   padding: 0;
+   margin: 1em auto;
+}
+
+.button {
+   padding: 1em;
+   background-color: rgb(114, 239, 105);
+   color: black;
+   text-transform: none;
+   text-align: center;
+   display: block;
+   width: 400px;
+   margin: 5px;
+   border-radius: 10px;
+   border: 1px solid black;
+   float: right;
+}
+
+.button:hover {
+   opacity: 0.5;
+}
+
+/*purchase and donate*/
+
+#purchase {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+}
+
+#purchase .start {
+  margin: .8em .2em;
+  width: 99%;
+  box-sizing: border-box;
+  box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+  background-color: rgb(250, 222, 141);
+  border-radius: 10px;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+}
+
+#purchase img {
+   margin: 10px;
+}
+
+#purchase .container {
+   margin: .8em .2em;
+   width: 99%;
+   box-sizing: border-box;
+   box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+   background-color: whitesmoke;
+   border-radius: 10px;
+}
+
+#purchase h2, #purchase p {
+   width: 90%;
+   padding: 0;
+   margin: 1em auto
+}
+
+#purchase table {
+   width: 50%;
+   padding: 0;
+   margin: 1em auto
+}
+
+.row3 img{
+   width: 100%;
+}
+
+.row3 {
+   display: flex;
+   margin: 10px;
+}
+
+.column3 {
+   flex: 33.33%;
+   padding: 5px;
+}
+
+.column3 img {
+   width: 93%;
+   height: 79%;
+}
+
+.column4 {
+   flex: 33.33%;
+   padding: 5px;
+}
+
+.column3 {
+   width: 93%;
+}
+
+#donate {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#donate .don {
+   margin: .8em .2em;
+   width: 46%;
+   box-sizing: border-box;
+   box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+   background-color: whitesmoke;
+   border: 2px outset black;
+   border-radius: 10px;
+   margin: 20px 0 35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#donate h2, #donate p {
+   width: 90%;
+   padding: 0;
+   margin: 1em auto;
+   color: rgb(47, 42, 42);
+}
+
+#donate img {
+   width: 99%;
+}
+
+#donate .don:hover {
+   transform: scale(1.06, 1.06);
+}
+
+#donate .button {
+   padding: 1em;
+   background-color: rgb(114, 239, 105);
+   color: black;
+   text-transform: none;
+   text-align: center;
+   display: block;
+   width: 98%;
+   align-content: center;
+   border-radius: 10px;
+   border: 1px solid black;
+    
+}
+
+#donate .button:hover {
+  opacity: 0.5;
+}
+
+
+/*mobile*/
+
+
+/*navigation*/
+
+@media screen and (max-width: 847px) {
+
+   
+   .mainNav ul {
+      flex-flow: column wrap;
+      text-align: center;
+      border: 1px ;
+   }
+   
+   .mainNav ul li {
+      width: 100%;
+   }
+   
+   .navText {
+      padding-right: 0;
+   }
+   
+   
+   ul li ul.dropdown {
+      width: 100%;
+      position: relative;
+   }
+   
+}
+
+/*footer*/
+
+@media screen and (max-width: 908px) {
+   footer ul {
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+   }
+   
+   footer ul li {
+      padding: 0;
+      margin: 0;
+      border: 0.5px  rgb(0, 0, 0);
+      flex-grow: 1;
+      width: 1em;
+   }
+   
+   footer ul li a:hover {
+      color: rgb(255, 255, 255);
+   }
+}
+
+@media screen and (max-width: 720px) {
+   footer ul {
+      flex-flow: column wrap;
+      margin-bottom: 25px;
+   }
+
+   footer ul li {
+      width: 100%;
+      margin: 3px;
+   }
+}
+
+
+/*home*/
+
+@media screen and (max-width: 650px) {
+
+   #slmap img {
+      text-align: center;
+      margin: 10px;
+      width: 95%;
+   }
+}
+
+
+/*tea plantation*/
+
+@media screen and (max-width: 500px) {
+
+   #lionlogo img {
+      width: 95%;
+      margin: 10px;
+      border-radius: 30px;
+   }
+
+   #lionlogo p {
+      margin-top: 5px;
+   }
+}
+
+@media screen and (max-width: 880px) {
+
+   #mus img {
+      width: 95%;
+      margin: 10px;
+   }
+}
+
+
+/*ceylon tea museum*/
+
+@media screen and (max-width: 1075px) {
+
+   #SecImg img {
+      width: 95%;
+      margin: 10px;
+   }
+}
+
+
+/*by products*/
+
+@media screen and (max-width: 825px) {
+
+   .Byproducts img {
+      float: none;
+      width: 96%;
+   }
+   
+   .button {
+      width: 98%;
+      align-content: center;
+      float: none;
+   }
+}
+
+
+/*purchase and donate*/
+
+@media screen and (max-width: 686px) {
+   #purchase img{
+      width: 96%;
+      margin: 0;
+      margin-top: 10px;
+   }
+}
+
+@media screen and (max-width: 1057px) {
+  
+   #donate .don {
+      width: 98%;
+   }
+}
+
+@media screen and (max-width: 660px) {
+   
+   .row3 {
+      display: block;
+   }
+   
+   .column3 {
+      block-size: 100%;
+   }
+   
+   .column3 {
+      float: none;
+      margin-top: 10px;
+      width: 100%;
+   }
+   
+   .column4 {
+      block-size: 100%;
+   }
+   
+   .column4 {
+      float: none;
+      margin-top: 10px;
+      width: 100%;
+   }
+}
+
+/*ceylon tea museum*/
+@media screen and (max-width: 660px) {
+   
+   .row {
+      display: block;
+   }
+   
+   .column {
+      block-size: 100%;
+   }
+   
+   .column2 {
+      float: none;
+      margin-top: 10px;
+      width: 100%;
+   }
+   
+}

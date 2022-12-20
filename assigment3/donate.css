@@ -1,0 +1,259 @@
+.online {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 70%;
+    border: 1px solid;
+    border-radius: 8px;
+    background: linear-gradient(45deg, rgb(225, 223, 223), rgb(255, 253, 253));
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 19px 38px silver, 0 15px 12px grey;
+}
+
+
+
+.online h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+
+}
+
+.online h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.third-row {
+    display: flex;
+}
+
+.owner {
+    width: 100%;
+    margin-right: 40px;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.selection1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select {
+    padding: 10px 100px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.selection select:focus {
+    outline: 0;
+}
+
+.selection1 select {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.selection1 select:focus {
+    outline: 0;
+}
+
+
+.online button {
+    background: linear-gradient(45deg, rgba(60, 162, 58, 0.863), rgba(253, 228, 130, 0.589));
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    border: 2px solid white;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.online button:hover {
+    background-color: rgb(255, 128, 99);
+    cursor: pointer;
+}
+
+.cards img {
+    width: 100px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.input-field input {
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-size: 15px;
+    width: 100%;
+}
+
+.input-field input:focus {
+    outline: 0;
+}
+
+.input-field.success input {
+    border-color: #09c372;
+}
+
+.input-field.error input {
+    border-color: #ff3860;
+}
+
+.input-field .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.msg {
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s,0.4s;
+}
+
+.openMsg{
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    visibility: visible;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+}
+
+.msg img {
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.openMsg img {
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.msg h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #333;
+}
+
+.openMsg h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #333;
+}
+
+.msg button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.openMsg button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 678px) {
+    .cards img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .cards img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .cards img {
+        width: 0px;
+    }
+
+    .selection1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .selection select {
+        padding: 10px 30%;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .selection1 select {
+        padding: 8px 5px;
+    }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="train ticket,ticket booking">
+    <link rel="stylesheet" href="tickets.css">
+
+    <title>TRAIN TOURS</title>
+
+</head>
+
+<body>
+    <h1>book train tours online</h2>
+        <br>
+        <br>
+
+        <form id="ticketsForm">
+
+            <!-- date -->
+            <fieldset>
+
+                <legend>Select a date</legend>
+                <p>
+                <div class="calender">
+                    <input type="date" id="startDate" name="startDate">
+                </div>
+                </p>
+                <p class ="show">Selected Date: <span id="selectedDate"></span></p>
+
+            </fieldset>
+
+
+            <!-- customer info -->
+            <fieldset>
+
+                <legend>Customer Details</legend>
+                <p>
+                <div class="info">
+                    <div class="fn">
+                        <label for="fname">Full Name:</label>
+                        <input type="text" id="fname" name="fname">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="mn">
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="text" id="mobile" name="mobile">
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="fn">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="mn">
+                        <label for="cemail">Confirm Email Address:</label>
+                        <input type="email" id="cemail" name="cemail">
+                        <div class="error"></div>
+                    </div>
+                </div>
+
+                <div class="gen">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                </p>
+
+            </fieldset>
+
+
+            <div class="row">
+                <div class="column">
+                    <table border="1" style="width:100%">
+                        <tr>
+                            <th colspan="3">TICKET PRICES</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                Sri Lankan Residence
+                            </td>
+                            <td>
+                                Adults
+                            </td>
+                            <td>
+                                RS.1200
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Children
+                            </td>
+                            <td>
+                                RS.700
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                Foreigners
+                            </td>
+                            <td>
+                                Adults
+                            </td>
+                            <td>
+                                RS.5500
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Children
+                            </td>
+                            <td>
+                                RS.2700
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Infants(less than 4 years old) doesn't need to purchase a pass</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="column">
+
+                    <table border="1" style="width:100%">
+                        <tr>
+                            <th colspan="3">DURATION CHARGES</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                3 Hours
+                            </td>
+                            <td>
+                                Sri Lankan Residence
+                            </td>
+                            <td>
+                                No additional charge
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Foreigners
+                            </td>
+                            <td>
+                                No additional charge
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">
+                                Half Day
+                            </td>
+                            <td>
+                                Sri Lankan Residence
+                            </td>
+                            <td>
+                                RS.350
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Foreigners
+                            </td>
+                            <td>
+                                RS.450
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">
+                                Full Day
+                            </td>
+                            <td>
+                                Sri Lankan Residence
+                            </td>
+                            <td>
+                                RS.600
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Foreigners
+                            </td>
+                            <td>
+                                RS.800
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <br>
+            <br><br>
+
+
+            <!-- ticket info -->
+            <fieldset>
+                <legend>Ticket Details</legend>
+                <p>
+                    <label for="local">Sri Lankan Residence :</label><br><br>
+
+                <div class="local">
+                    <div class="ye">
+                        <label for="ladult">Adult: </label>
+                        <div class="dec button">-</div>
+                        <input type="text" name="ladult" id="ladult" value="0" readonly>
+                        <div class="inc button">+</div>
+                    </div>
+                    <div class="ye">
+                        <label for="lchild">Child: </label>
+                        <div class="dec button">-</div>
+                        <input type="text" name="lchild" id="lchild" value="0" readonly>
+                        <div class="inc button">+</div>
+                    </div>
+                </div>
+                <br><br><br>
+
+                <label for="foreign">Foreigners :</label><br><br>
+
+                <div class="foreign">
+                    <div class="ye"><label for="fadult">Adult: </label>
+                        <div class="dec button">-</div>
+                        <input type="text" name="fadult" id="fadult" value="0" readonly>
+                        <div class="inc button">+</div>
+                    </div>
+                    <div class="ye"><label for="fchild">Child: </label>
+                        <div class="dec button">-</div>
+                        <input type="text" name="fchild" id="fchild" value="0" readonly>
+                        <div class="inc button">+</div>
+                    </div>
+                </div>
+                </p><br>
+
+                <p>
+                <div class="time">
+                    <label for="duration">Duration: </label>
+                    <select id="duration" name="duration">
+                        <option value="3 Hours">3 Hours</option>
+                        <option value="Half Day">Half Day</option>
+                        <option value="Full Day">Full Day</option>
+                    </select>
+                </div>
+                </p><br>
+
+                <div class="c">
+                    <legend>Cart:</legend>
+                    <p id="cart"></p>
+                </div>
+
+                <!-- add to order -->
+
+                <div class="add">
+                    <p><button type="button" id="add">Add to order</button></p><br>
+                </div>
+
+                <div class="twoBtn">
+
+                    <!--add to favorite -->
+                    <div class="twoButton">
+                        <p><button type="button" id="addfav">Add To Favorite</button></p><br>
+                    </div>
+                
+                    <!-- show favorite -->
+                    <div class="twoButton">
+                        <p><button type="button" id="fav">Show Favorite Oder</button></p><br>
+                    </div>
+
+                    <!-- loyality points -->
+
+                    <div class="twoButton">
+                        <p><button type="button" id="loyal">Check Loyalty Points</button></p><br>
+                    </div>
+                </div>
+
+                <div class="current">
+                    <legend>Current Oder & Cost:</legend>
+                    <p id="cost"></p>
+                </div>
+                <br>
+
+                <div class="current">
+                    <legend>Total Loyalty Points:</legend>
+                    <p id="loyalPoints"></p>
+                </div>
+                <br>
+
+                <div class="current">
+                    <legend>Favorite Order:</legend>
+                    <p id="favOrder"></p>
+                </div>
+
+            </fieldset>
+            <br>
+            <br>
+
+            <!-- place order -->
+            <div class="placeButton">
+                <p><button type="submit" id="place">Place Order</button></p>
+            </div>
+
+
+        </form>
+        <br>
+        <br>
+
+        <p id="output"></p>
+        <script src="ticket.js"></script>
+</body>
+
+</html>
